@@ -1,2 +1,3 @@
-FROM openjdk:8
-COPY dd-java-agent.jar /deployments
+FROM openjdk:17
+RUN /mkdir /datadog
+COPY dd-java-agent.jar /datadog
